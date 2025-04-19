@@ -1,4 +1,4 @@
-var { postEvent, setDebug } = window.tapps;
+var { postEvent, setDebug } = window.tapps.bridge;
 
 setDebug(true);
 
