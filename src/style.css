@@ -1,5 +1,16 @@
 body {
   margin: 0;
-  padding: 0;
+  padding: 16px;
   font-family: "SF Pro", Roboto, sans-serif;
+}
+
+code {
+  padding: 2px 6px;
+  color: crimson;
+  background: #ff000022;
+  border-radius: 4px;
+}
+
+.action {
+  color: dodgerblue;
 }
