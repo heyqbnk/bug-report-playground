@@ -1,5 +1,12 @@
+var { postEvent, setDebug } = window.tapps;
+
+setDebug(true);
+
 document.getElementById('call-inline-query').addEventListener('click', () => {
-  window.Telegram.WebApp.switchInlineQuery('Test query', ['users']);
+  postEvent('web_app_switch_inline_query', {
+    query: 'Test query',
+    chat_types: ['users']
+  });
 });
 
-window.Telegram.WebApp.ready();
+postEvent('web_app_ready');
