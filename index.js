@@ -10,6 +10,4 @@ document.getElementById('call-inline-query').addEventListener('click', () => {
   });
 });
 
-setTimeout(() => {
-  postEvent('web_app_ready');
-}, 2000);
+postEvent('web_app_ready');
