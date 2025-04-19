@@ -1,0 +1,20 @@
+{
+  "name": "bug-report-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": "https://heyqbnk.github.io/bug-report-playground",
+  "scripts": {
+    "serve": "serve src",
+    "deploy": "gh-pages -d src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.7.0",
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "serve": "^14.2.4"
+  }
+}
