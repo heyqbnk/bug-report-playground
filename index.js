@@ -9,4 +9,6 @@ document.getElementById('call-inline-query').addEventListener('click', () => {
   });
 });
 
-postEvent('web_app_ready');
+setTimeout(() => {
+  postEvent('web_app_ready');
+}, 2000);
