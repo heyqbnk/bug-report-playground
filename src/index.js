@@ -1,5 +1,6 @@
-var { postEvent, setDebug } = window.tapps;
+var { postEvent, setDebug, targetOrigin } = window.tapps.bridge;
 
+targetOrigin.set('*');
 setDebug(true);
 
 document.getElementById('call-inline-query').addEventListener('click', () => {
