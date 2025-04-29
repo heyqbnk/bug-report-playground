@@ -11,11 +11,11 @@ document.getElementById('call-inline-query').addEventListener('click', () => {
 });
 
 document.getElementById('call-show-storage').addEventListener('click', () => {
-  postEvent('web_app_secure_storage_get_key', { key: 'TEST' });
+  postEvent('web_app_secure_storage_get_key', { req_id: Math.random().toString(), key: 'test' });
 })
 
 on('secure_storage_key_received', res => {
-  alert('Received storage key' + JSON.stringify(res));
+  alert('Received secure_storage_key_received: ' + JSON.stringify(res));
 });
 
 postEvent('web_app_ready');
