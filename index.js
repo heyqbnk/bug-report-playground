@@ -10,8 +10,12 @@ document.getElementById('call-inline-query').addEventListener('click', () => {
   });
 });
 
-document.getElementById('call-show-storage').addEventListener('click', () => {
-  postEvent('web_app_secure_storage_get_key', { req_id: Math.random().toString(), key: 'test' });
+document.getElementById('call-secure-storage-set').addEventListener('click', () => {
+  postEvent('web_app_secure_storage_save_key', {
+    req_id: 'abc',
+    key: 'AAA',
+    value: 'BBB',
+  });
 })
 
 on('secure_storage_key_received', res => {
