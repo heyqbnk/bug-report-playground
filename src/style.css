@@ -17,6 +17,7 @@ iframe {
 .action {
   color: dodgerblue;
   cursor: pointer;
-  padding: 0 16px;
+  padding: 8px;
+  margin: 0;
   box-sizing: border-box;
 }
