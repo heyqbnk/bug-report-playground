@@ -4,11 +4,16 @@ body {
   font-family: "SF Pro", Roboto, sans-serif;
   height: 100vh;
   width: 100vw;
-  display: flex;
-  flex-direction: column;
   box-sizing: border-box;
   background: white;
   color: black;
+}
+
+.page {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 iframe {
@@ -26,4 +31,17 @@ iframe {
 
 .input-container {
   padding: 8px;
+}
+
+.fixed {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
