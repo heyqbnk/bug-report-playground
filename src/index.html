@@ -9,14 +9,37 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <p id="call-inline-query" class="action">
-      Call <b>web_app_switch_inline_query</b>
-    </p>
-    <p id="call-secure-storage-set" class="action">
-      Call <b>web_app_secure_storage_save_key</b> with key <b>AAA</b> and value <b>BBB</b>
-    </p>
-    <iframe src="https://webappcontent.telegram.org/demo?mode=menu#tgWebAppVersion=10">
-    </iframe>
+    <div id="main" class="page">
+      <p id="call-inline-query" class="action">
+        Call <b>web_app_switch_inline_query</b>
+      </p>
+      <p id="call-secure-storage-set" class="action">
+        Call <b>web_app_secure_storage_save_key</b> with key <b>AAA</b> and value <b>BBB</b>
+      </p>
+      <p id="go-to-input-test" class="action">
+        Go to input test
+      </p>
+      <div class="input-container">
+        <input id="multiple-files-input" type="file" multiple accept="image/*"/>
+      </div>
+      <iframe src="https://webappcontent.telegram.org/demo?mode=menu#tgWebAppVersion=10">
+      </iframe>
+    </div>
+    <div id="input-test" class="page" style="display: none">
+      <div>
+        <p>
+          This input is safe to click, nothing horrible happens.
+        </p>
+        <input placeholder="Enter your name" type="text"/>
+        <button>Click me to lose input focus</button>
+      </div>
+      <div class="fixed">
+        <input placeholder="This input is in fixed container" type="text"/>
+        <p>
+          But clicking this one shows something strange.
+        </p>
+      </div>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>
