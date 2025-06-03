@@ -17,6 +17,10 @@ document.getElementById('call-secure-storage-set').addEventListener('click', () 
     value: 'BBB',
   });
   alert('Called web_app_secure_storage_save_key with { key: "AAA", value: "BBB" }');
+});
+
+document.getElementById('multiple-files-input').addEventListener('change', e => {
+  alert(`${e.files.length} files were selected`);
 })
 
 on('secure_storage_key_received', res => {
