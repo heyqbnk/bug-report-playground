@@ -21,3 +21,7 @@ iframe {
   margin: 0;
   box-sizing: border-box;
 }
+
+.input-container {
+  padding: 8px;
+}
